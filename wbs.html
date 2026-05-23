@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>WBS — CyberShield</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="nav-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="currentColor" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="cyber">Cyber</span>Shield</span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="overview.html">Overview</a></li><li><a href="scope.html">Scope</a></li><li><a href="wbs.html">WBS</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li><li><a href="quality.html">Quality</a></li><li><a href="risk.html">Risk</a></li><li><a href="about.html">About Us</a></li></ul><button class="nav-toggle" id="navToggle"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div><div class="nav-mobile" id="navMobile"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="scope.html">Scope</a><a href="wbs.html">WBS</a><a href="schedule.html">Schedule</a><a href="resources.html">Resources</a><a href="quality.html">Quality</a><a href="risk.html">Risk</a><a href="about.html">About Us</a></div></nav>
+<main>
+  <div class="container">
+    <div class="page-header fade-up"><div class="page-tag">Section 3</div><h1>Work Breakdown <span class="hi">Structure</span></h1><p>19 tasks across 5 phases, managed using MS Project with clearly defined dependencies and milestones.</p></div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px" class="fade-up d1">
+      <span class="badge badge-purple">Initiation</span>
+      <span class="badge badge-blue">Design</span>
+      <span class="badge" style="background:rgba(14,165,233,.12);color:var(--primary);border-color:rgba(14,165,233,.3)">Development</span>
+      <span class="badge badge-amber">Testing</span>
+      <span class="badge badge-cyan">Deployment</span>
+    </div>
+
+    <div class="table-wrap fade-up d2" style="margin-bottom:32px;overflow-x:auto">
+      <table>
+        <thead><tr><th>WBS Code</th><th>Task Name</th><th>Duration</th><th>Predecessor(s)</th><th>Phase</th></tr></thead>
+        <tbody>
+          <tr style="background:rgba(255,255,255,.03)"><td class="td-mono">1.0</td><td class="td-parent">Project Initiation</td><td class="td-mono-muted">1 week</td><td class="td-muted">—</td><td><span class="badge badge-purple">Initiation</span></td></tr>
+          <tr><td class="td-mono">1.1</td><td class="td-child">Identify Stakeholders</td><td class="td-mono-muted">2 days</td><td class="td-muted">—</td><td><span class="badge badge-purple">Initiation</span></td></tr>
+          <tr><td class="td-mono">1.2</td><td class="td-child">Gather Requirements</td><td class="td-mono-muted">3 days</td><td class="td-muted">1.1</td><td><span class="badge badge-purple">Initiation</span></td></tr>
+          <tr style="background:rgba(255,255,255,.03)"><td class="td-mono">2.0</td><td class="td-parent">System Design</td><td class="td-mono-muted">2 weeks</td><td class="td-muted">1.2</td><td><span class="badge badge-blue">Design</span></td></tr>
+          <tr><td class="td-mono">2.1</td><td class="td-child">Design System Architecture</td><td class="td-mono-muted">5 days</td><td class="td-muted">1.2</td><td><span class="badge badge-blue">Design</span></td></tr>
+          <tr><td class="td-mono">2.2</td><td class="td-child">Develop UI/UX Wireframes</td><td class="td-mono-muted">5 days</td><td class="td-muted">1.2</td><td><span class="badge badge-blue">Design</span></td></tr>
+          <tr><td class="td-mono">2.3</td><td class="td-child">Design Database Structure</td><td class="td-mono-muted">4 days</td><td class="td-muted">2.1</td><td><span class="badge badge-blue">Design</span></td></tr>
+          <tr style="background:rgba(255,255,255,.03)"><td class="td-mono">3.0</td><td class="td-parent">System Development</td><td class="td-mono-muted">4 weeks</td><td class="td-muted">2.3</td><td><span class="badge" style="background:rgba(14,165,233,.12);color:var(--primary);border:1px solid rgba(14,165,233,.3)">Development</span></td></tr>
+          <tr><td class="td-mono">3.1</td><td class="td-child">Develop Backend (APIs &amp; Database)</td><td class="td-mono-muted">10 days</td><td class="td-muted">2.3</td><td><span class="badge" style="background:rgba(14,165,233,.12);color:var(--primary);border:1px solid rgba(14,165,233,.3)">Development</span></td></tr>
+          <tr><td class="td-mono">3.2</td><td class="td-child">Develop Frontend Dashboard</td><td class="td-mono-muted">10 days</td><td class="td-muted">2.2</td><td><span class="badge" style="background:rgba(14,165,233,.12);color:var(--primary);border:1px solid rgba(14,165,233,.3)">Development</span></td></tr>
+          <tr><td class="td-mono">3.3</td><td class="td-child">Integrate Threat Detection &amp; Compliance Modules</td><td class="td-mono-muted">8 days</td><td class="td-muted">3.1</td><td><span class="badge" style="background:rgba(14,165,233,.12);color:var(--primary);border:1px solid rgba(14,165,233,.3)">Development</span></td></tr>
+          <tr style="background:rgba(255,255,255,.03)"><td class="td-mono">4.0</td><td class="td-parent">Testing &amp; Quality Assurance</td><td class="td-mono-muted">3 weeks</td><td class="td-muted">3.3</td><td><span class="badge badge-amber">Testing</span></td></tr>
+          <tr><td class="td-mono">4.1</td><td class="td-child">Unit Testing</td><td class="td-mono-muted">5 days</td><td class="td-muted">3.3</td><td><span class="badge badge-amber">Testing</span></td></tr>
+          <tr><td class="td-mono">4.2</td><td class="td-child">System &amp; Security Testing</td><td class="td-mono-muted">7 days</td><td class="td-muted">4.1</td><td><span class="badge badge-amber">Testing</span></td></tr>
+          <tr><td class="td-mono">4.3</td><td class="td-child">User Acceptance Testing (UAT)</td><td class="td-mono-muted">5 days</td><td class="td-muted">4.2</td><td><span class="badge badge-amber">Testing</span></td></tr>
+          <tr style="background:rgba(255,255,255,.03)"><td class="td-mono">5.0</td><td class="td-parent">Deployment &amp; Finalisation</td><td class="td-mono-muted">2 weeks</td><td class="td-muted">4.3</td><td><span class="badge badge-cyan">Deployment</span></td></tr>
+          <tr><td class="td-mono">5.1</td><td class="td-child">System Deployment</td><td class="td-mono-muted">3 days</td><td class="td-muted">4.3</td><td><span class="badge badge-cyan">Deployment</span></td></tr>
+          <tr><td class="td-mono">5.2</td><td class="td-child">Final Documentation</td><td class="td-mono-muted">5 days</td><td class="td-muted">4.3</td><td><span class="badge badge-cyan">Deployment</span></td></tr>
+          <tr><td class="td-mono">5.3</td><td class="td-child">Training &amp; Presentation Preparation</td><td class="td-mono-muted">4 days</td><td class="td-muted">5.1</td><td><span class="badge badge-cyan">Deployment</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:60px">
+      <div class="card fade-up d1">
+        <h2 style="font-size:1rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px"><span class="divider"></span>Task Dependencies</h2>
+        <ul class="checklist">
+          <li><span class="icon-dot"></span>Project Initiation must complete before System Design begins</li>
+          <li><span class="icon-dot"></span>System Architecture design gates the Database Structure design</li>
+          <li><span class="icon-dot"></span>All design phases complete before Development starts</li>
+          <li><span class="icon-dot"></span>Backend development must finish before Integration modules</li>
+          <li><span class="icon-dot"></span>Full development complete before any Testing phase begins</li>
+          <li><span class="icon-dot"></span>Unit Testing gates System &amp; Security Testing</li>
+          <li><span class="icon-dot"></span>UAT approval required before Deployment can start</li>
+        </ul>
+      </div>
+      <div class="card fade-up d2">
+        <h2 style="font-size:1rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px"><span class="divider divider-cyan"></span>Critical Path</h2>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 1</div><div class="tl-title">Project Initiation</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 2</div><div class="tl-title">System Design</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 3</div><div class="tl-title">Procurement</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 4</div><div class="tl-title">System Development</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 5</div><div class="tl-title">Staff Training</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 6</div><div class="tl-title">Testing &amp; QA</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">Phase 7</div><div class="tl-title">Deployment</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div class="footer-brand"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="var(--primary)" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="name"><span style="color:var(--primary)">Cyber</span>Shield</div><div class="sub">Smart Security Management System</div></div></div><div class="footer-meta"><div>Developed for SecureFinance (Pty) Ltd</div><div>POPIA &amp; ISO/IEC 27001 Compliant — <span>VUT IT Project 2026</span></div></div><div class="footer-right"><div>Target Delivery: 28 April 2026</div></div></div></footer>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Quality — CyberShield</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="nav-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="currentColor" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="cyber">Cyber</span>Shield</span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="overview.html">Overview</a></li><li><a href="scope.html">Scope</a></li><li><a href="wbs.html">WBS</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li><li><a href="quality.html">Quality</a></li><li><a href="risk.html">Risk</a></li><li><a href="about.html">About Us</a></li></ul><button class="nav-toggle" id="navToggle"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div><div class="nav-mobile" id="navMobile"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="scope.html">Scope</a><a href="wbs.html">WBS</a><a href="schedule.html">Schedule</a><a href="resources.html">Resources</a><a href="quality.html">Quality</a><a href="risk.html">Risk</a><a href="about.html">About Us</a></div></nav>
+<main>
+  <div class="container">
+    <div class="page-header fade-up"><div class="page-tag">Section 6</div><h1>Quality <span class="hi">Plan</span></h1><p>Adheres to ISO 25010, ISO/IEC 27001, and POPIA. Quality enforced through automated pipelines, peer reviews, security scans, and formal UAT checkpoints.</p></div>
+
+    <h2 class="section-title fade-up" style="font-size:1.3rem;margin-bottom:20px">Quality Standards</h2>
+    <div class="grid-4" style="margin-bottom:32px">
+      <div class="card fade-up d1"><p style="font-size:.85rem;font-weight:700;color:var(--primary);font-family:monospace;margin-bottom:8px">ISO 25010</p><p style="font-size:.78rem;color:var(--muted)">Software quality characteristics — reliability, usability, maintainability</p></div>
+      <div class="card fade-up d2"><p style="font-size:.85rem;font-weight:700;color:var(--primary);font-family:monospace;margin-bottom:8px">ISO/IEC 27001</p><p style="font-size:.78rem;color:var(--muted)">Information Security Management — mandatory for the SIEM system</p></div>
+      <div class="card fade-up d3"><p style="font-size:.85rem;font-weight:700;color:var(--primary);font-family:monospace;margin-bottom:8px">POPIA</p><p style="font-size:.78rem;color:var(--muted)">Protection of Personal Information Act — all deliverables must comply</p></div>
+      <div class="card fade-up d4"><p style="font-size:.85rem;font-weight:700;color:var(--primary);font-family:monospace;margin-bottom:8px">Playbooks</p><p style="font-size:.78rem;color:var(--muted)">Reviewed and approved by the IT Security Manager before go-live</p></div>
+    </div>
+
+    <h2 class="section-title fade-up" style="font-size:1.3rem;margin-bottom:20px">Quality Metrics &amp; Acceptance Thresholds</h2>
+    <div class="table-wrap fade-up d1" style="margin-bottom:32px">
+      <table>
+        <thead><tr><th>Metric</th><th>Target</th><th>Measurement Method</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td style="font-weight:600">Code Coverage</td><td class="td-mono">&gt; 80%</td><td class="td-muted">Automated test coverage reports (e.g. pytest)</td><td><span class="badge badge-cyan">Standard</span></td></tr>
+          <tr><td style="font-weight:600">Bug Density</td><td class="td-mono">&lt; 0.5 per 100 LOC</td><td class="td-muted">Issue tracking system (e.g. GitHub Issues)</td><td><span class="badge badge-cyan">Standard</span></td></tr>
+          <tr><td style="font-weight:600">Threat Detection Rate</td><td class="td-mono">&gt; 95%</td><td class="td-muted">Simulated attack testing results</td><td><span class="badge badge-red">Critical</span></td></tr>
+          <tr><td style="font-weight:600">False Positive Rate</td><td class="td-mono">&lt; 5%</td><td class="td-muted">Validation against labelled datasets</td><td><span class="badge badge-red">Critical</span></td></tr>
+          <tr><td style="font-weight:600">User Satisfaction</td><td class="td-mono">&gt; 4/5</td><td class="td-muted">Post-UAT feedback survey</td><td><span class="badge badge-cyan">Standard</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title fade-up" style="font-size:1.3rem;margin-bottom:20px">QA Processes</h2>
+    <div class="grid-3" style="margin-bottom:32px">
+      <div class="card fade-up d1"><div style="width:32px;height:32px;border-radius:8px;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--primary);margin-bottom:12px">01</div><h3 style="font-size:.88rem;font-weight:700;margin-bottom:6px">Peer Code Reviews</h3><p style="font-size:.78rem;color:var(--muted)">All code submissions reviewed to ensure standard adherence and detect early defects.</p></div>
+      <div class="card fade-up d2"><div style="width:32px;height:32px;border-radius:8px;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--primary);margin-bottom:12px">02</div><h3 style="font-size:.88rem;font-weight:700;margin-bottom:6px">Static Code Analysis</h3><p style="font-size:.78rem;color:var(--muted)">Automated analysis using SonarQube to identify code quality issues continuously.</p></div>
+      <div class="card fade-up d3"><div style="width:32px;height:32px;border-radius:8px;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--primary);margin-bottom:12px">03</div><h3 style="font-size:.88rem;font-weight:700;margin-bottom:6px">CI/CD Pipelines</h3><p style="font-size:.78rem;color:var(--muted)">Continuous integration with automated unit, integration, and regression test pipelines.</p></div>
+      <div class="card fade-up d4"><div style="width:32px;height:32px;border-radius:8px;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--primary);margin-bottom:12px">04</div><h3 style="font-size:.88rem;font-weight:700;margin-bottom:6px">Weekly Security Scans</h3><p style="font-size:.78rem;color:var(--muted)">OWASP ZAP scans and dependency vulnerability checks every week.</p></div>
+      <div class="card fade-up d5"><div style="width:32px;height:32px;border-radius:8px;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--primary);margin-bottom:12px">05</div><h3 style="font-size:.88rem;font-weight:700;margin-bottom:6px">Documentation Reviews</h3><p style="font-size:.78rem;color:var(--muted)">Systematic reviews ensuring clarity, completeness, and accuracy of all docs.</p></div>
+    </div>
+
+    <h2 class="section-title fade-up" style="font-size:1.3rem;margin-bottom:20px">Quality Control Checkpoints</h2>
+    <div class="grid-4" style="margin-bottom:32px">
+      <div class="card fade-up d1" style="text-align:center"><div style="width:52px;height:52px;border-radius:50%;background:rgba(14,165,233,.1);border:2px solid rgba(14,165,233,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px"><span style="font-size:.65rem;color:var(--muted)">Week</span><span style="font-size:.95rem;font-weight:900;color:var(--primary);line-height:1">4</span></div><p style="font-size:.88rem;font-weight:700;margin-bottom:4px">Design Review</p><p style="font-size:.75rem;color:var(--muted)">Architecture validation and design sign-off</p></div>
+      <div class="card fade-up d2" style="text-align:center"><div style="width:52px;height:52px;border-radius:50%;background:rgba(14,165,233,.1);border:2px solid rgba(14,165,233,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px"><span style="font-size:.65rem;color:var(--muted)">Week</span><span style="font-size:.95rem;font-weight:900;color:var(--primary);line-height:1">7</span></div><p style="font-size:.88rem;font-weight:700;margin-bottom:4px">Code Quality Gate</p><p style="font-size:.75rem;color:var(--muted)">Test coverage and static analysis results</p></div>
+      <div class="card fade-up d3" style="text-align:center"><div style="width:52px;height:52px;border-radius:50%;background:rgba(14,165,233,.1);border:2px solid rgba(14,165,233,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px"><span style="font-size:.65rem;color:var(--muted)">Week</span><span style="font-size:.95rem;font-weight:900;color:var(--primary);line-height:1">10</span></div><p style="font-size:.88rem;font-weight:700;margin-bottom:4px">Security Audit</p><p style="font-size:.75rem;color:var(--muted)">Penetration testing and OWASP ZAP results</p></div>
+      <div class="card fade-up d4" style="text-align:center"><div style="width:52px;height:52px;border-radius:50%;background:rgba(14,165,233,.1);border:2px solid rgba(14,165,233,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px"><span style="font-size:.65rem;color:var(--muted)">Week</span><span style="font-size:.95rem;font-weight:900;color:var(--primary);line-height:1">11</span></div><p style="font-size:.88rem;font-weight:700;margin-bottom:4px">UAT</p><p style="font-size:.75rem;color:var(--muted)">User acceptance testing and feedback integration</p></div>
+    </div>
+
+    <div class="card fade-up" style="border-color:rgba(14,165,233,.25);background:rgba(14,165,233,.04);margin-bottom:60px">
+      <h2 style="font-size:1rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px"><span class="divider"></span>Continuous Improvement &amp; Corrective Actions</h2>
+      <ul class="checklist">
+        <li><span class="icon-dot"></span>End-of-phase retrospectives to identify improvement areas.</li>
+        <li><span class="icon-dot"></span>Any quality metric falling below target triggers a corrective action plan within 48 hours.</li>
+        <li><span class="icon-dot"></span>A quality backlog is maintained for non-critical improvements, addressed in future iterations.</li>
+        <li><span class="icon-dot"></span>Lessons learned are documented and stored for future project reference.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div class="footer-brand"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="var(--primary)" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="name"><span style="color:var(--primary)">Cyber</span>Shield</div><div class="sub">Smart Security Management System</div></div></div><div class="footer-meta"><div>Developed for SecureFinance (Pty) Ltd</div><div>POPIA &amp; ISO/IEC 27001 Compliant — <span>VUT IT Project 2026</span></div></div><div class="footer-right"><div>Target Delivery: 28 April 2026</div></div></div></footer>
+<script src="script.js"></script>
+</body></html>

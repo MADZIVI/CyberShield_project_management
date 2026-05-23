@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Risk — CyberShield</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="nav-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="currentColor" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="cyber">Cyber</span>Shield</span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="overview.html">Overview</a></li><li><a href="scope.html">Scope</a></li><li><a href="wbs.html">WBS</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li><li><a href="quality.html">Quality</a></li><li><a href="risk.html">Risk</a></li><li><a href="about.html">About Us</a></li></ul><button class="nav-toggle" id="navToggle"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div><div class="nav-mobile" id="navMobile"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="scope.html">Scope</a><a href="wbs.html">WBS</a><a href="schedule.html">Schedule</a><a href="resources.html">Resources</a><a href="quality.html">Quality</a><a href="risk.html">Risk</a><a href="about.html">About Us</a></div></nav>
+<main>
+  <div class="container">
+    <div class="page-header fade-up"><div class="page-tag">Section 7</div><h1>Risk <span class="hi">Management</span></h1><p>7 identified risks with probability/impact ratings and mitigation strategies to ensure proactive handling of uncertainties.</p></div>
+
+    <div class="grid-3" style="margin-bottom:32px">
+      <div class="card fade-up d1" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.05);text-align:center"><div class="stat-value" style="color:var(--danger)">1</div><div class="stat-label">High Probability</div><div class="stat-sub">1 of 7 risks</div></div>
+      <div class="card fade-up d2" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.05);text-align:center"><div class="stat-value" style="color:var(--amber)">4</div><div class="stat-label">Medium Probability</div><div class="stat-sub">4 of 7 risks</div></div>
+      <div class="card fade-up d3" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.05);text-align:center"><div class="stat-value" style="color:#4ade80">2</div><div class="stat-label">Low Probability</div><div class="stat-sub">2 of 7 risks</div></div>
+    </div>
+
+    <h2 class="section-title fade-up" style="font-size:1.3rem;margin-bottom:20px">Risk Register</h2>
+    <div class="table-wrap fade-up d1" style="margin-bottom:32px;overflow-x:auto">
+      <table>
+        <thead><tr><th>ID</th><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td class="td-mono">R1</td><td>Team member unavailability</td><td><span class="badge badge-amber">Medium</span></td><td><span class="badge badge-red">High</span></td><td class="td-muted" style="max-width:260px">Cross-train roles; maintain task documentation so any member can pick up any work</td><td class="td-muted">Project Manager</td></tr>
+          <tr><td class="td-mono">R2</td><td>Technology / infrastructure failure</td><td><span class="badge badge-green">Low</span></td><td><span class="badge badge-red">High</span></td><td class="td-muted" style="max-width:260px">AWS EC2 with automated snapshots; maintain local backup environment</td><td class="td-muted">VUT IT Support</td></tr>
+          <tr><td class="td-mono">R3</td><td>Scope creep</td><td><span class="badge badge-red">High</span></td><td><span class="badge badge-red">High</span></td><td class="td-muted" style="max-width:260px">Strict change control; all scope changes require formal Project Sponsor approval</td><td class="td-muted">Project Manager</td></tr>
+          <tr><td class="td-mono">R4</td><td>Security vulnerability discovered in SIEM</td><td><span class="badge badge-green">Low</span></td><td><span class="badge" style="background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.4)">Critical</span></td><td class="td-muted" style="max-width:260px">Weekly OWASP ZAP scans; dependency vulnerability checks; rollback plan in place</td><td class="td-muted">Group Members</td></tr>
+          <tr><td class="td-mono">R5</td><td>Schedule delays due to resource constraints</td><td><span class="badge badge-amber">Medium</span></td><td><span class="badge badge-amber">Medium</span></td><td class="td-muted" style="max-width:260px">15% contingency time in schedule; weekly syncs allow early escalation</td><td class="td-muted">Project Manager</td></tr>
+          <tr><td class="td-mono">R6</td><td>POPIA non-compliance during development</td><td><span class="badge badge-green">Low</span></td><td><span class="badge" style="background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.4)">Critical</span></td><td class="td-muted" style="max-width:260px">Compliance module integrated from Day 1; weekly POPIA checklist reviews</td><td class="td-muted">Group Members</td></tr>
+          <tr><td class="td-mono">R7</td><td>Poor user adoption post-deployment</td><td><span class="badge badge-amber">Medium</span></td><td><span class="badge badge-amber">Medium</span></td><td class="td-muted" style="max-width:260px">Structured staff training with certification; user-friendly dashboard design</td><td class="td-muted">Group Members</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:60px">
+      <div class="card fade-up d1">
+        <h3 style="font-size:.95rem;font-weight:700;margin-bottom:16px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-size:.78rem">Risk Matrix</h3>
+        <div style="display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;gap:6px;margin-bottom:8px">
+          <div></div>
+          <div style="text-align:center;font-size:.7rem;color:var(--muted);font-weight:600">Low</div>
+          <div style="text-align:center;font-size:.7rem;color:var(--muted);font-weight:600">Medium</div>
+          <div style="text-align:center;font-size:.7rem;color:var(--muted);font-weight:600">High</div>
+          <div style="text-align:center;font-size:.7rem;color:var(--muted);font-weight:600">Critical</div>
+        </div>
+        <div style="display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;gap:6px;margin-bottom:6px;align-items:center">
+          <div style="text-align:right;font-size:.7rem;color:var(--muted);font-weight:600;padding-right:8px">High</div>
+          <div class="matrix-cell med"></div>
+          <div class="matrix-cell high"></div>
+          <div class="matrix-cell high"><span class="matrix-rid">R3</span></div>
+          <div class="matrix-cell high"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;gap:6px;margin-bottom:6px;align-items:center">
+          <div style="text-align:right;font-size:.7rem;color:var(--muted);font-weight:600;padding-right:8px">Medium</div>
+          <div class="matrix-cell low"></div>
+          <div class="matrix-cell med"></div>
+          <div class="matrix-cell high"><span class="matrix-rid">R1</span></div>
+          <div class="matrix-cell high"><span class="matrix-rid">R5</span><span class="matrix-rid">R7</span></div>
+        </div>
+        <div style="display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;gap:6px;align-items:center">
+          <div style="text-align:right;font-size:.7rem;color:var(--muted);font-weight:600;padding-right:8px">Low</div>
+          <div class="matrix-cell low"></div>
+          <div class="matrix-cell low"></div>
+          <div class="matrix-cell med"><span class="matrix-rid">R2</span></div>
+          <div class="matrix-cell high"><span class="matrix-rid">R4</span><span class="matrix-rid">R6</span></div>
+        </div>
+        <p style="font-size:.7rem;color:var(--muted);margin-top:8px;text-align:center">Probability ↑ &nbsp;|&nbsp; Impact →</p>
+        <div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:5px"><div style="width:14px;height:14px;border-radius:3px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25)"></div><span style="font-size:.72rem;color:var(--muted)">Low</span></div>
+          <div style="display:flex;align-items:center;gap:5px"><div style="width:14px;height:14px;border-radius:3px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25)"></div><span style="font-size:.72rem;color:var(--muted)">Medium</span></div>
+          <div style="display:flex;align-items:center;gap:5px"><div style="width:14px;height:14px;border-radius:3px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25)"></div><span style="font-size:.72rem;color:var(--muted)">High</span></div>
+        </div>
+      </div>
+      <div class="card fade-up d2">
+        <h3 style="font-size:.95rem;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:8px"><span class="divider"></span>Risk Response Strategy</h3>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:flex-start;gap:12px"><span class="badge badge-blue" style="min-width:70px;justify-content:center;flex-shrink:0">Avoid</span><p style="font-size:.83rem;color:var(--muted)">Eliminate high-probability/critical-impact risks by changing approach (e.g. strict scope control for R3).</p></div>
+          <div style="display:flex;align-items:flex-start;gap:12px"><span class="badge badge-cyan" style="min-width:70px;justify-content:center;flex-shrink:0">Mitigate</span><p style="font-size:.83rem;color:var(--muted)">Reduce probability or impact through proactive controls (cross-training for R1, automated backups for R2).</p></div>
+          <div style="display:flex;align-items:flex-start;gap:12px"><span class="badge badge-amber" style="min-width:70px;justify-content:center;flex-shrink:0">Monitor</span><p style="font-size:.83rem;color:var(--muted)">Low-probability risks tracked weekly via MS Project and daily standups for early escalation.</p></div>
+          <div style="display:flex;align-items:flex-start;gap:12px"><span class="badge badge-red" style="min-width:70px;justify-content:center;flex-shrink:0">Escalate</span><p style="font-size:.83rem;color:var(--muted)">Critical issues escalated to Project Sponsor within 24 hours of identification.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div class="footer-brand"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.25C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke-width="1.5" fill="var(--primary)" fill-opacity=".15"/><path d="M9 12l2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="name"><span style="color:var(--primary)">Cyber</span>Shield</div><div class="sub">Smart Security Management System</div></div></div><div class="footer-meta"><div>Developed for SecureFinance (Pty) Ltd</div><div>POPIA &amp; ISO/IEC 27001 Compliant — <span>VUT IT Project 2026</span></div></div><div class="footer-right"><div>Target Delivery: 28 April 2026</div></div></div></footer>
+<script src="script.js"></script>
+</body></html>
